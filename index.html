@@ -3,36 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="./index.css">
+    <meta name="author" content="">
+    <meta name="description" content="A clean, responsive HTML resume built with simple CSS and a tiny JS helper.">
 </head>
 <body>
-    <h1>
-        new web page
-    </h1>
-    <header>
+    <div class="container">
+        <header class="resume-header">
+            <div>
+                <h1 class="name">Your Name</h1>
+                <p class="title">Frontend Developer</p>
+            </div>
+            <div class="actions">
+                <button id="printBtn" class="btn">Print / Download</button>
+                <button id="themeToggle" class="btn btn--alt">Toggle Theme</button>
+            </div>
+        </header>
 
-        <nav>
-            <ul>
-                <li>home</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <article>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab quia architecto culpa. Laudantium omnis obcaecati accusantium quis reprehenderit rerum fugiat aut impedit aperiam. At quis vel dolorum omnis molestias.
-            </p>
-        </article>
-    </section>
+        <section class="contact">
+            <div class="contact-item">📧 email@example.com</div>
+            <div class="contact-item">📞 +1 (555) 555-5555</div>
+            <div class="contact-item">🌐 linkedin.com/in/yourprofile</div>
+            <div class="contact-item">💻 github.com/yourusername</div>
+        </section>
+
+        <main class="main-grid">
+            <aside class="sidebar">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React / Vue</li>
+                    <li>Responsive Design</li>
+                    <li>Accessibility</li>
+                </ul>
+
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git, npm</li>
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                </ul>
+            </aside>
+
+            <section class="content">
+                <section class="card">
+                    <h2>Summary</h2>
+                    <p>
+                        Concise professional summary — a few lines that describe you, your strengths, and the work you want to do.
+                    </p>
+                </section>
+
+                <section class="card">
+                    <h2>Experience</h2>
+                    <div class="job">
+                        <h4>Frontend Developer — Company Name</h4>
+                        <span class="muted">2022 — Present</span>
+                        <ul>
+                            <li>Built responsive UI components and improved performance by X%.</li>
+                            <li>Collaborated with designers and backend engineers to ship features.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <h4>Web Developer — Another Co.</h4>
+                        <span class="muted">2020 — 2022</span>
+                        <ul>
+                            <li>Maintained and modernized legacy codebases, adding tests and CI.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Education</h2>
+                    <p>Degree, University — Year</p>
+                </section>
+
+                <section class="card">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><strong>Project A</strong> — small description and link.</li>
+                        <li><strong>Project B</strong> — small description and link.</li>
+                    </ul>
+                </section>
+            </section>
+        </main>
+
+        <footer class="footer muted">Generated with a small HTML/CSS template — edit to personalize.</footer>
+    </div>
+
+    <script src="./scripts.js"></script>
 </body>
 </html>
